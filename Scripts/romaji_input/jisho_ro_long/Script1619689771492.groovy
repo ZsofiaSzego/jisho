@@ -21,10 +21,9 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://jisho.org/')
 
-WebUI.setText(findTestObject('jisho_ro_long/Page_Jisho.org Japanese Dictionary/input'), 'gakkō', 
-    FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('jisho_dashboard/input'), 'gakkō', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('jisho_ro_long/Page_Jisho.org Japanese Dictionary/button__submit'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('jisho_dashboard/submit_button'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('jisho_ro_long/Page_gakkou - Jisho.org/res_meaning'), 0, FailureHandling.STOP_ON_FAILURE)
 

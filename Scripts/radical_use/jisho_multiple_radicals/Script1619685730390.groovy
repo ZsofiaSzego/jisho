@@ -21,7 +21,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://jisho.org/')
 
-WebUI.click(findTestObject('jisho_multiple_radicals/radicals/Page_Jisho.org Japanese Dictionary/div_Radicals'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('jisho_dashboard/radicals'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('jisho_multiple_radicals/Page_Jisho.org Japanese Dictionary/rad_gate'), FailureHandling.CONTINUE_ON_FAILURE)
 
