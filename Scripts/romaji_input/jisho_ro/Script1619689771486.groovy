@@ -21,9 +21,9 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://jisho.org/')
 
-WebUI.setText(findTestObject('jisho_ro/Page_Jisho.org Japanese Dictionary/input'), 'aoi')
+WebUI.setText(findTestObject('jisho_dashboard/input'), 'aoi')
 
-WebUI.click(findTestObject('jisho_ro/Page_Jisho.org Japanese Dictionary/search'))
+WebUI.click(findTestObject('jisho_dashboard/submit_button'))
 
 WebUI.verifyElementPresent(findTestObject('jisho_hiragana/Page_aoi - Jisho.org/kanji_res'), 0)
 
