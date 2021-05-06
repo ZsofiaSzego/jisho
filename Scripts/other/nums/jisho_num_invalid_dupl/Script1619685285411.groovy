@@ -21,14 +21,12 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://jisho.org/')
 
-WebUI.setText(findTestObject('jisho_num_invalid_dubl/Page_Jisho.org Japanese Dictionary/input'), 
-    '百百', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('jisho_dashboard/input'), '百百', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('jisho_num_invalid_dubl/Page_Jisho.org Japanese Dictionary/button__submit'), 
+WebUI.click(findTestObject('jisho_dashboard/submit_button'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('jisho_num_invalid_dubl/Page_ - Jisho.org/no_found_div'), 'Sorry, couldn\'t find any words matching 百百.', 
     FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('jisho_num_invalid_dubl/Page_ - Jisho.org/no_found_div'), 
-    'Sorry, couldn\'t find any words matching 百百.', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser()
 

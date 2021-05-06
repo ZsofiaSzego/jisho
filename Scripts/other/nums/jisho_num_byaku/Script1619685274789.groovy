@@ -21,10 +21,9 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://jisho.org/')
 
-WebUI.setText(findTestObject('jisho_num_byaku/Page_Jisho.org Japanese Dictionary/input'), '三百', 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('jisho_dashboard/input'), '三百', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('jisho_num_byaku/Page_Jisho.org Japanese Dictionary/button__submit'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('jisho_dashboard/submit_button'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('jisho_num_byaku/Page_ - Jisho.org/res'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 

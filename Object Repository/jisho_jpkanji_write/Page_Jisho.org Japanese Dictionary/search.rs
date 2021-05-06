@@ -6,14 +6,18 @@
    <elementGuidId>99aabec2-cd3e-4994-9b03-570e06395834</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>BASIC</key>
+         <value>id(&quot;search_main&quot;)/div[@class=&quot;inner&quot;]/button[@class=&quot;submit icon&quot;]/svg[@class=&quot;icon search-icon&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>(.//*[normalize-space(text()) and normalize-space(.)='▾'])[1]/following::*[name()='svg'][1]</value>
       </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>

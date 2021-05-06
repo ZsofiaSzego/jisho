@@ -21,17 +21,13 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://jisho.org/')
 
-WebUI.setText(findTestObject('jisho_kanji_outdate/Page_Jisho.org Japanese Dictionary/input'), '舊字體', 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('jisho_dashboard/input'), '舊字體', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('jisho_kanji_outdate/Page_Jisho.org Japanese Dictionary/button_submit'), 
-    FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('jisho_dashboard/submit_button'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('jisho_kanji_outdate/Page_ - Jisho.org/res_meaning'), 
-    0, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('jisho_kanji_outdate/Page_ - Jisho.org/res_meaning'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('jisho_kanji_outdate/Page_ - Jisho.org/res_note'), 
-    0, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('jisho_kanji_outdate/Page_ - Jisho.org/res_note'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('jisho_kanji_outdate/Page_ - Jisho.org/res_word'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
