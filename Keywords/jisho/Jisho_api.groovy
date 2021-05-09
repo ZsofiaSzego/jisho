@@ -47,7 +47,7 @@ class Jisho_api {
 		RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 		ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
 
-		WS.verifyElementPropertyValue(response, 'data[0].japanese[0].word', expectedKanji)
+		WS.verifyElementPropertyValue(response, 'data[0].japanese[0].word', expectedKanji)		
 	}
 
 
