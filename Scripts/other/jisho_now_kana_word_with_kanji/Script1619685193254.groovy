@@ -21,13 +21,15 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://jisho.org/')
 
-WebUI.setText(findTestObject('jisho_dashboard/input'), 'ユトウヨミ', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.setText(findTestObject('jisho_dashboard/input'), '亜米利加', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('jisho_dashboard/submit_button'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('jisho_mixed_katakana/Page_yutouyomi - Jisho.org/res_word'), 30, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('jisho_now_kana_with_kanji/Page_ - Jisho.org/res_word'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('jisho_mixed_katakana/Page_yutouyomi - Jisho.org/res_meaning'), 30, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('jisho_now_kana_with_kanji/Page_ - Jisho.org/res_meaning'), 'America', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('jisho_now_kana_with_kanji/Page_ - Jisho.org/res_furigana'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser()
 

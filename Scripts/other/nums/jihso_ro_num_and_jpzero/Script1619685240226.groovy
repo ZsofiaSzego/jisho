@@ -21,7 +21,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl('https://jisho.org/')
 
-WebUI.setText(findTestObject('jisho_ro_num_with_jpzero/Page_Jisho.org Japanese Dictionary/input'), 
+WebUI.setText(findTestObject('null'), 
     '3〇〇', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('jisho_ro_num_with_jpzero/Page_Jisho.org Japanese Dictionary/button__submit'), 
